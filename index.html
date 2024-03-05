@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body >
+<div id="header">
+    <div class="container">
+       
+        <nav>
+            <div class="icon">
+                <h1 class="logo" style="font-size: 38px;">Pra<span>sim</span></h1>
+            </div>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonial">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+            
+        </nav>
+        <div class="header-text">
+            <p1 style="font-size: 28px; color:rgb(235, 79, 79);">Hello, my name is Prasim</p1>
+            <p> And I'm a <span>Programmer</span></p>
+            <h1>From <span>Kath<span>mandu</span></span></h1>
+        </div>
+        <a href="image/Resume.pdf" Download class="btn btn2 btn3">Resume</a>
+    
+        </div>
+        
+        </div>
+    </div>
+</div> 
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typingEffect = new Typed(".header-text p span",{
+      strings : ["Coder","Designer","Developer","Learner"],
+      loop : true,
+      typeSpeed : 100,
+      backSpeed : 80,
+      backDelay : 1500
+
+  })
+</script>
+<!-------------------about-------------------> 
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-column-1">
+                <img src="/image//profile.PNG" >
+                
+            </div>
+            <div class="about-column-2">
+                <h1 class="sub-title">About me</h1>
+                <p>An IT student who is enthusiastic and motivated and is passionate about keeping up with the newest 
+                    developments in technology and the market.</p>
+                <div class="tab-titles">
+                    <p class= "tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class= "tab-links" onclick="opentab('education')">Education</p>
+                    <p class= "tab-links" onclick="opentab('experience')">Experience</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Database</span><br> My SQL</li>
+                        <li><span>Web developing</span><br>Web development</li>
+                        <li><span>Python</span><br>project management</li>
+                    </ul>
+                </div>
+                <div class="tab-contents"  id="education">
+                    <ul>
+                        <li><span>2019</span><br> Schooling</li>
+                        <li><span>2019-2020</span><br>+2 science</li>
+                        <li><span>2021-Present</span><br>Undergraduate</li>
+                    </ul>
+                </div>
+                <div class="tab-contents"  id="experience">
+                    <ul>
+                        <li><span>IOS</span><br> Database</li>
+                        <li><span>I0T</span><br>Arduino</li>
+                        <li><span>Programming</span><br>Java, java script and Python</script></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>  
+
+
+
+<!----------------Portfolio----------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="image/web.png">
+                <div class="layer">
+                    <h3>Web development</h3>
+                    <p> Having knowledge about programming languages such as HTML, CSS, and JavaScript to create the layout, style, and functionality of web pages.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/IOT.png">
+                <div class="layer">
+                    <h3>IOT Device</h3>
+                    <p>The project's goal was to develop and use an ultrasonic distance meter. The device 
+                        presented here is capable of detecting the target and figuring out its distance. A basic, 
+                        low-cost tool for measuring distance is the ultrasonic distance meter. The device 
+                        determines the distance with the appropriate precision and resolution.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/ML.png">
+                <div class="layer">
+                    <h3>Machine learning</h3>
+                    <p>Understanding of pyhton libraries such as numpy, Pandas and Matplotlib that will help in ML, and data analyst.</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+
+
+<!--------------------Services------------------->
+<div id="testimonial">
+    <div class="container">
+        <h1 class="sub-title">Testimonials</h1>
+        <div class="services-list">
+            <div class="service">
+                <img src="image/sarthak.png">
+                <h2>Sarthak Rijal     <span style="color: white;">(Developer) </span></h2>
+                <p>Prasim has amazing talent and intelligence, which enable him to complete a variety of activities successfully. In general, he is a kind and perceptive person. </p>
+                
+            </div>
+            <div class="service">
+                <img src="image/hritik.PNG">
+                <h2>Hritik Sonar      <span style="color: white;">(Backend Developer) </span></h2>
+                <p>The learning commons is an excellent place to work with Prasim. He has the potential to work alone as well as being willing to assist others. </p>
+                
+            </div>
+            <div class="service">
+                <img src="image/srijan.png">
+                <h2>Srijan Shakya      <span style="color: white;">(Colleague) </span></h2>
+                <p>Prasim is a joy to work with and be around. Their friendly nature and enthusiastic approach to life make him an asset to any team or project. </p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------contact---------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>Praseem77@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9808******</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/pra.seem.5"><i href="#"><ion-icon name="logo-facebook"></ion-icon></i></a>
+                    <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"><i href="#"><ion-icon name="logo-linkedin"></ion-icon> </i></a>
+                    <a href="https://github.com/prasimthapa"><i href="#"><ion-icon name="logo-github"></ion-icon> </i></a>
+                    
+            </div>
+                <a href="image/Resume.pdf" Download class="btn btn2">Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Prasim.</p>
+    </div>
+</div>
+<!---<script>
+    var slideimg = document.getElementById("slideimg");
+    var image = new Array(
+        "image/b3.jpg",
+        "image/cat.jpg",
+        "image/b5.jpg"
+       );
+    var len = image.length;
+    var i = 0;
+    function slider(){
+        if(i > len-1){
+            i = 0;
+        }
+        slideimg.src = images[i];
+        i++;
+        setTimeout('slider()',3000)
+    }
+
+</script>--->
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right="0";
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz-rHZ9rhMHAc1AckUeJQqj5S1XHle1LxHEKmCIHmBnmz5uLFFzOumPPsK5pI2vuZoF/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succesfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },1000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+ 
+</body>
+</html>
